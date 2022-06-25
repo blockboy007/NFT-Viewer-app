@@ -27,6 +27,7 @@ soup = bs4.BeautifulSoup(r, "lxml")
 ##############################################################################################################
 nft_dict = {0: ['asset_id', 'policy_id']}
 nft = soup.find_all("option")[10:]
+##### Need to start at 10, because the :9 are built into the cardanoscan website and not relevant
 count = 1
 for item in nft:
 
