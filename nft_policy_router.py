@@ -37,4 +37,9 @@ for item in nft:
     nft_dict[count] = [asset_id, policy_id]
     count += 1
 
-print(nft_dict)
+for key, val in nft_dict.items():
+    print(f"{key} --- Asset ID: {val[0]} --- Policy ID: {val[1]}")
+    
+    
+###########################################
+## Does not grab all NFTs within a wallet if it is in daedalus, multiple addresses are present, need to run through each address to grab all NFTs
