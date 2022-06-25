@@ -17,9 +17,9 @@ from selenium.webdriver.common.keys import Keys
 wallet_id = "addr1q8vnwuz7tcn5eycs7073m3runv4r2gc7gwd6nkvtjxqtcd7g6vfkkxad5y2mml0e7tw07c6klme5md8mw5cm85lyhuwqyapkxj"
 cardano_scan = f"https://cardanoscan.io/address/{wallet_id}"
 r = requests.get(cardano_scan).content
-path = "C:\Program Files (x86)\chromedriver.exe"
-driver = webdriver.Chrome(path)
-driver.get(cardano_scan)
+# path = "C:\Program Files (x86)\chromedriver.exe"
+# driver = webdriver.Chrome(path)
+# driver.get(cardano_scan)
 soup = bs4.BeautifulSoup(r, "lxml")
 
 #############################################################################################################
