@@ -1,14 +1,8 @@
 from scrapy.http import TextResponse
-from selenium import webdriver
 import requests
 import lxml
 import bs4
 import time
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.keys import Keys
 from api_calls import ada_price_api
 from api_calls import price_api
 
