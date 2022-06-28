@@ -18,7 +18,8 @@ nft_dict = {}
 
 
 def create_dict(wallet_id):
-
+    url = f"https://cardanoscan.io/address/{wallet_id}"
+    soup = bs4.BeautifulSoup(url,"html5lib")
     nft = soup.find_all("option")[10:]
     ##### Need to start at 10, because the :9 are built into the cardanoscan website and not relevant
     count = 1
