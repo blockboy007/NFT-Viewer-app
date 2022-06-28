@@ -102,3 +102,7 @@ for key, val in nft_dict.items():
     nft_dict[key].append(usd_price)
 
 print(nft_dict)
+
+
+my_iter = iter(nft_dict.items())
+print(next(my_iter))
